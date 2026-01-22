@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 const Services = () => {
   const services = [
     {
-      title: "Birth Certificate & National ID",
-      desc: "Streamlined application process with expert guidance.",
-      img: "https://via.placeholder.com/200x150?text=Birth+Certificate",
+      title: "Hardware Repair",
+      desc: "We fix all kinds of hardware issues, from broken screens to faulty motherboards.",
+      img: "https://via.placeholder.com/200x150?text=Hardware+Repair",
     },
     {
-      title: "Driving License Application",
-      desc: "Quick and hassle-free driving license form fill-up.",
-      img: "https://via.placeholder.com/200x150?text=Driving+License",
+      title: "Software Troubleshooting",
+      desc: "We can help you with any software problems you might have, from operating system errors to application crashes.",
+      img: "https://via.placeholder.com/200x150?text=Software+Troubleshooting",
     },
     {
-      title: "Admission Form Fill-Up",
-      desc: "Accurate and timely government & private form submissions.",
-      img: "https://via.placeholder.com/200x150?text=Admission+Form",
+      title: "Virus & Malware Removal",
+      desc: "We will remove any viruses or malware from your computer and install antivirus software to protect you in the future.",
+      img: "https://via.placeholder.com/200x150?text=Virus+Removal",
     },
   ];
 
@@ -28,8 +28,7 @@ const Services = () => {
           Our Services
         </h1>
         <p className="mt-2 text-gray-600 max-w-xl mx-auto">
-          We offer a range of services to get your work done quickly, securely,
-          and efficiently.
+          We offer a range of services to get your computer running smoothly again.
         </p>
       </div>
 
@@ -47,9 +46,6 @@ const Services = () => {
                 {service.title}
               </h2>
               <p className="text-gray-500">{service.desc}</p>
-              <Link to="/contact" className="btn btn-primary btn-sm mt-3">
-                Get Service
-              </Link>
             </div>
           </div>
         ))}

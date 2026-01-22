@@ -33,15 +33,6 @@ const Header = () => {
           About
         </NavLink>
         <NavLink
-          to="/documents"
-          className={({ isActive }) =>
-            isActive
-              ? "hover:text-blue-500 font-bold text-blue-600"
-              : "hover:text-blue-500"
-          }>
-          Required Documents
-        </NavLink>
-        <NavLink
           to="/pricing"
           className={({ isActive }) =>
             isActive
@@ -50,7 +41,15 @@ const Header = () => {
           }>
           Pricing
         </NavLink>
-        <button className="btn btn-primary">Get Started</button>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive
+              ? "hover:text-blue-500 font-bold text-blue-600"
+              : "hover:text-blue-500"
+          }>
+          Contact
+        </NavLink>
       </div>
     </nav>
   );
